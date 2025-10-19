@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head> <title> Lesson 1 </title>
+ 
+<style type="text/css">
+body{
+    background-image: url(ict.gif);
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    color:#2D3A43 ;
+    background-color: white;
+}
+
+.logo{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+ul.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a{
+    color: #2D3A43;
+    text-decoration:none;
+    font-size: 1em;
+    transition: color 0.6 ease;
+}
+
+.nav-item{
+    padding: 12px;
+    font-weight: bold;
+}
+
+.nav-item:hover{
+    background-color: #adcfddbe;
+    border-radius: 8px;
+    transition: color 1s ease, background-color 1s ease
+}
+</style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo"> ICT-TLE </div>
+        <ul class="nav-links">
+            <li><a class="nav-item" href="ict.html">ICT Home Page</a></li>
+            <li><a class="nav-item" href="lesson1.html">Lesson 1</a></li>
+            <li><a class="nav-item" href="">Lesson 2 </a></li>
+            <li><a class="nav-item" href="">Lesson 3</a></li>
+            <li><a class="nav-item" href="">Lesson 4</a></li>
+            <li><a class="nav-item" href="">Lesson 5</a></li>
+            <li><a class="nav-item" href="">Lesson 6</a></li>
+        </ul>
+    </nav>
+
+</body></html>

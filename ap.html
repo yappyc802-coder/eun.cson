@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html>
+
+<head> <title> Araling Panlipunan </title>
+ 
+    <link rel="stylesheet" href="ap.css" type="text/css">
+
+<style type="text/css">
+
+h2{
+    font-size:25px;
+}
+
+.flipbook{
+    position: relative;
+    width: 700px;height: 400px;
+    perspective: 2000px;
+    margin-left: 790px;
+}
+
+.page{
+    position: absolute;
+    width: 100%;height: 100%;
+    transform-origin: left center;
+    transform-style: preserve-3d;
+    transition: transform 1s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    border-radius: 10px;overflow: hidden;
+}
+
+.page .front, .page .back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    text-align: center;
+}
+
+.page .back{
+    background: #e3ffe3;
+    transform: rotateY(180deg);
+}
+
+.btn{
+    margin-top: 20px;
+    padding: 10px 18px;
+    border-radius: 8px;
+    background: #5F632B;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover{ 
+    background: #46491f; 
+}
+
+input[type="checkbox"]{ 
+    display: none; 
+}
+.cover{
+    z-index: 5;
+    background: #5F632B;
+}
+
+#open:checked ~ .cover{
+    transform: rotateY(-180deg);
+    z-index: 1;
+}
+
+.p1{
+    z-index: 4;
+    background: #fff;
+}
+
+#flip1:checked ~ .p1{transform: rotateY(-180deg);
+    z-index: 2;
+}
+
+.p2{
+    z-index: 3;
+    background: #fff;
+}
+
+#flip2:checked ~ .p2{
+    transform: rotateY(-180deg);
+    z-index: 5;}
+
+</style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo"> Araling Panlipunan </div>
+        <ul class="nav-links">
+            <li><a class="nav-item" href="index.html">Home</a></li>
+            <li><a class="nav-item" href="abt me.html">AboutMe </a></li>
+            <li><a class="nav-item" href="ict.html">ICT</a></li>
+            <li><a class="nav-item" href="ap.html">AP</a></li>
+        </ul>
+    </nav>
+    <br><br>
+<h1> MAYKROEKONOMIKS  </h1><br>
+
+<div class="flipbook">
+
+    <input type="checkbox" id="open">
+    <input type="checkbox" id="flip1">
+    <input type="checkbox" id="flip2">
+
+    <div class="page cover">
+        <div class="front">
+            <h2><b>LESSON 1 - Demand</b></h2>
+        <label for="open" class="btn">Open Book</label>
+        </div>
+    </div>
+
+    <div class="page p1">
+        <div class="front">
+        <h2>Ano ang Demand?</h2>
+            
+        <p style="text-align: justify; margin-right: 50px;">
+            Ang <em>demand</em> ay tumutukoy sa dami ng produkto at serbisyo na kaya at handang bilhin ng mga mamimili sa alternatibong
+            presyo sa isang takdang panahon. Ang presyo ay may malaking impluwensiya sa pagtatakda ng demand ng mga mamimili. Kaya't ito 
+            ang pangunahing salik na nakapagpapabago sa demand ng mga mamimili. Sinasabing <strong>ang demand at presyo ay laging
+            magkaugnay  at ito ay nailalaraan sa iba't ibang paraan.</strong> 
+        </p> <br>
+        <h2>Demand Function, Schedule at Curve</h2>
+        <p style="text-align: justify; margin-right: 50px;">
+            Ang Demand Function ay isang matematikong paglalarawan na nagpapahayag ng ugnayan ng presyo at demand.
+            Ang Demand Schedule ay nagpapakita ng dami ng produkto na handa at kayang bilhin ng mamimili sa alternatibong presyo sa 
+            isang takdang. Ito ay talahanayan na nagpapakita ng demand ng mamimili sa bawat lebel ng presyo. Samantalang ang Demand Curve 
+            ay isang grapikong representasyon ng demand schedule.
+        </p>
+        <label for="flip1" class="btn">Next </label>
+        </div> 
+    </div>
+
+    <div class="page p2">
+            <div class="front">
+                <h2>Demand Function: Qd = a - bP</h2>
+                <p style="text-align: justify; margin-right: 50px;">Kung saan ang Qd ay quantity demanded at and dependent varial at P ay ang presyo at independent variable. </p>
+        <img src="demand.jpg" alt="demand function" width="200" height="150" style="margin-left: 320px">
+        <img src="schedule.png" alt="demand schedule" width="200" height="150" style="margin-right: 350px; margin-top: -150px;">
+                <p style="text-align: justify; margin-right: 50px;"> Ang ceteris paribus ay salitang Latin na ibig sabihin ay "all other things remain constant" o "walang ibang salik na nagbabago"
+                    Presyo lamang ang nakaaapeto sa demand sa ilalim ng ceteris paribus condition.
+                </p>
+                
+
+            <label for="flip2" class="btn">Next </label>
+            </div>
+      </div>
+</div>
+
+<section class="demand-factors" id="demand-factors">
+    <h2>Salik na Nakakaapekto ng Demand</h2>
+
+    <p style="text-align: justify;">
+        Ang demand ng mga mamimili para sa isang produkto o serbisyo ay naaapektuhan ng iba't ibang salik. 
+        Sa seksyong ito, tatalakayin ang anim (6) pangunahing salik na karaniwang binabanggit sa ekonomiks.
+    </p>
+
+    <nav class="df-nav" aria-label="Salik navigation">
+        <a href="#pf" class="df-link">1. Panlasa/Kagustuhan</a>
+        <a href="#inc" class="df-link">2. Kita</a>
+        <a href="#taste" class="df-link">3. Populasyon</a>
+        <a href="#expect" class="df-link">4. Presyo ng Magkaugnay na Produkto</a>
+        <a href="#population" class="df-link">5. Okasyon</a>
+        <a href="#season" class="df-link">6. Ekspektasyon</a>
+    </nav>
+
+    <article class="df-item" id="pf">
+        <h3>1. Panlasa/Kagustuhan</h3>
+        <p style="text-align: justify;">
+            Ang pagkahilig ng imported na produkto at dahilan ng mataas na demand at ang pagkasawa ay dahilan din ng pagbabago sa demand.
+            Dito pumapasok ang diminishing utility kung saan ang kabuuang kasiyahan ng tao ay tumataas sa bawat pagkonsumo ng produkto, ngunit
+            kapag ito ay paulit-ulit na, ang karagdagang kasiyahan o marginal utility ay bumababa.
+        </p>
+    </article>
+
+    <article class="df-item" id="inc">
+        <h3>2. Kita</h3>
+        <p style="text-align: justify;">
+           Ang salapi na tinatanggap ng tao kapalit ng ginawang produkto at serbisyo ay tinatawag na kita. Ito ang basehan ng pagtatakda ng badyet sa pamilya.
+        <strong>Normal goods</strong> ang tawag sa mga produkto na tumataas ang demand kasabay ng pagtaas ng kita ng mamimili. Samantalang ang <strong>inferior</strong>
+        goods and tawag sa mga produkto na bumababa ang demand habang tumataas ang kita ng tao.
+    </p>
+    </article>
+
+    <article class="df-item" id="taste">
+        <h3>3. Populasyon</h3>
+        <p style="text-align: justify;">
+            Ang popoulasyon any potential market ng isang bansa. Ang dami ng tao ay naglalarawan ng dami ng bilang ng mga mamimili na siyang nagtatakda ng demand.
+        </p>
+    </article>
+
+    <article class="df-item" id="expect">
+        <h3>4. Presyo ng Magkaugnay na Produkto</h3>
+        <p style="text-align: justify;">
+            Mayroong tinatawag na substitute goods at complementary goods. Ang <strong>substitute goods</strong> ay mga produkto na pamalit sa ginagamit na produkto.
+            Ang demand ng substitute goods ay tumataas kapag tumaas ang presyo ng produkto na dating binibili. Ang <strong>complementary goods</strong> naman ay mga 
+            produkto na magkasama ginagamit. Mababawasan ang kapakinabangan ng isang produkto kapag gagamitin nang mag-isa.
+        </p>
+    </article>
+
+    <article class="df-item" id="population">
+        <h3>5. Okasyon</h3>
+        <p style="text-align: justify;">
+            Sa kultura ng ating bansa, pinahahalagahan natin ang mahahalagang okasyon sa buhay, kaya sa bawat selebrasyo tumataas amg demang sa mga produkto na naayon sa okasyong 
+            ipinagdiriwang tulad ng pagkain, dekorasyon, at mga regalong ibinibigay.
+    </p>
+    </article>
+
+    <article class="df-item" id="season">
+        <h3>6. Ekspektasyon</h3>
+        <p style="text-align: justify;">
+            Marami ang kalamidad sa panahon ngayon, ang mga mamimili ay nag-iisip na maaaring maapektuhan ang buhay sa ganitong sitwasyon. Dahil dito, sila ay nagpa-panic buying, lalo 
+            na ang mga tao na may sapat at labis na salapi. Bunga ng ganitong reaksiyon, ang demand sa mga produkto ay tataas, kaya't ang presyo ay tumataas din.
+            </p>
+    </article>
+
+    <p style="text-align: center; margin-top: 1rem;"><a href="#demand-factors" class="btn">Back to top</a></p>
+</section>
+
+<section class="supply-section">
+    <h2>LESSON 2 - Supply</h2>
+
+    <div class="tabs">
+        
+        <input type="radio" id="tab-def" name="supply-tabs" checked>
+        <label for="tab-def" class="tab">Supply</label>
+
+        <input type="radio" id="tab-det" name="supply-tabs">
+        <label for="tab-det" class="tab">Mga Nakakaapekto</label>
+
+        <input type="radio" id="tab-curve" name="supply-tabs">
+        <label for="tab-curve" class="tab">Function, Schedule at Curve</label>
+
+        <div class="panels">
+            <div class="panel" id="panel-def">
+                <p style="text-align: justify;">
+                    Ang <strong>supply</strong> ay tumutukoy sa dami ng produkto o serbisyo na handa at kayang ipagbili ng mga producer sa isang takdang panahon
+                    sa iba't ibang lebel ng presyo. Tulad ng demand, naapektuhan din ang supply ng presyo. Habang tumataas ang presyo, tumatadin ang dami na handang ibenta (ceteris paribus).
+                    </p>
+            </div>
+
+            <div class="panel" id="panel-det">
+                <ul style="text-align: left; margin-left: 1.2em;">
+                    <li><strong>Teknolohiya</strong> — tumutukoy sa paggamit ng makabagong kaalaman at kagamitan sa paglikha ng produkto.</li>
+                    <li><strong>Dami ng Nagtitinda</strong> — ang dami ng nagtitinda ay palatandaan ng maraming supply ng produkto, kaya ang mga mamimili ay may pagkakataon na makapili ng dekalidad na produkto.</li>
+                    <li><strong>Subsidy</strong> — tulong na ipinagkakaloob ng pamahalaan sa maliliit na negosyante at mga magsasaka upang paramihin ang kanilang produksiyon at pataasin ang supply ng mga produkto.</li>
+                    <li><strong>Gastos sa Produksiyon</strong> — maraming gastusin ang nakapaloob sa paglikha ng produkto, isa rito ang buwis. Ito ang kontribusyon na ipinapataw ng pamahalaan sa mga tao at kompanya. 
+                                Kapag tumataas ang sinisingil na buwis, karagdagang gastos ito para sa negosyante.</li>
+                    <li><strong>Panahon/Klima</strong> — kapag ang klima o panahon ay naaangkop sa pangangalangan ng mga produsyer, maaring dumami o kumonti ang supply.</li>
+                    <li><strong>Presyo ng Ibang Produkto</strong> — kapag tumaas ang presyo, ang mga supplier ay nagaganyak na magbili ng nasabing produkto. Kapag tumaas ang presyo ng kakomplementaryong produkto, ang 
+                                supply ng kakomplementaryong produkto ay dumarami.</li>
+                    <li><strong>Ekspektasyon</strong> — dahil sa mga inaasahan, ang mga produsyer ay nagbabawas ng supply ng produkto na nagiging dahilan ng pagbaba ng supply. isinasagawa ang hoarding kung saan tinatago ang 
+                                mga produkto upang hintayin ang pagtaas ng presyo.</li>
+                    
+                </ul>
+            </div>
+
+            <div class="panel" id="panel-curve">
+                <p style="text-align: justify;">
+                    Ang supply function ay isang matematikong paglalarawan na nagpapahayag ng ugnayan ng presyo at supply. Makikita ang ugnayan sa pamamagitan ng supply function na karaniwang nasa anyong Qs = c + dP,
+                    kung saan ang Qs ay quantity supplied, P ay presyo, c ay constant, at d ay ang slope ng supply curve. Ang supply schedule ay isang talahanayan na nagpapakita ng dami ng produkto na handa at kayang 
+                    ipagbili ng mga producer sa iba't ibang lebel ng presyo sa isang takdang panahon. Samantalang ang supply curve ay grapikong representasyon na nagpapakita ng relasyon ng presyo at dami na isinusuplay.
+                </p>
+                <img src="supply-curve.png" alt="supply curve" style="width:240px; height: 200px ;  margin-left: 150px">
+                <img src="pag-iba.png" alt="supply curve" style="width:250px;height: 200px;  margin-top: -200px;" >
+        </div>
+    </div>
+</section>
+
+<section class="lesson" id="lesson-3">
+    <h2>LESSON 3 – Price Elasticity</h2>
+
+    <h3>MGA URI NG ELASTISIDAD</h3>
+    <ol style="text-align: justify; margin-left: 1.2em;">
+        <li>
+            <strong>Elastic (&gt; 1)</strong><br>
+            Kahulugan: Mas malaki ang naging bahagdan ng pagtugon ng QD (quantity demanded) kaysa sa bahagdan ng pagbabago sa presyo.<br>
+            Uri: Elastic
+        </li>
+        <li>
+            <strong>Inelastic (&lt; 1)</strong><br>
+            Kahulugan: Mas maliit ang naging bahagdan ng pagbabago ng QD kaysa sa bahagdan ng pagbabago sa presyo.<br>
+            Uri: Inelastic
+        </li>
+        <li>
+            <strong>Unitary (= 1)</strong><br>
+            Kahulugan: Pareho ang bahagdan ng pagbabago. Tapat o pantay ang pagbabago ng presyo at quantity demanded.<br>
+            Uri: Unitary
+        </li>
+        <li>
+            <strong>Perfectly Elastic (∞)</strong><br>
+            Kahulugan: Anumang pagbabago sa presyo ay magdudulot ng walang hanggan (infinite) na pagbabago sa quantity demanded.<br>
+            Uri: Perfectly Elastic
+        </li>
+        <li>
+            <strong>Perfectly Inelastic (0)</strong><br>
+            Kahulugan: Ang quantity demanded ay hindi tumutugon sa anumang pagbabago ng presyo.<br>
+            Uri: Perfectly Inelastic
+        </li>
+    </ol>
+
+    <h3>PRICE ELASTICITY NG SUPPLY</h3>
+    <p style="text-align: justify;">Paraan na ginagamit upang masukat ang magiging pagtugon ng quantity supplied ng mga prodyuser sa tuwing may pagbabago sa presyo nito.</p>
+
+    <h3>FORMULA NG PRICE ELASTICITY OF DEMAND (PED)</h3>
+    <p style="text-align: justify;"><strong>Ed = (% Pagbabago sa Quantity Demanded) ÷ (% Pagbabago sa Presyo)</strong></p>
+
+    <p style="text-align: justify;">Ang ibig sabihin nito ay sinusukat ng elasticity kung gaano kalaki ang pagtugon ng mga mamimili sa pagbabago ng presyo ng isang produkto.</p>
+
+    <h4>Paano kalkulahin ang % Pagbabago</h4>
+    <p style="text-align: justify;"><strong>% Pagbabago sa Quantity Demanded</strong> — ibabawas ang lumang quantity demanded mula sa bagong quantity demanded, hahatiin sa lumang quantity demanded, at imumultiply sa 100.</p>
+    <p style="text-align: justify;"><strong>% Pagbabago sa Presyo</strong> — ibabawas ang lumang presyo mula sa bagong presyo, hahatiin sa lumang presyo, at imumultiply sa 100.</p>
+
+    <p style="text-align: justify;">Kapag nakuha na ang dalawang porsyento, hahatiin ang pagbabago sa quantity demanded sa pagbabago sa presyo. Ang magiging sagot ay ang elasticity coefficient na nagsasabi kung ang produkto ay elastic, inelastic, o unitary.</p>
+
+    <p style="text-align: justify;"><strong>Interpretasyon:</strong> Kung ang resulta ay higit sa 1, ang demand ay <em>elastic</em>. Kung mas mababa sa 1, ito ay <em>inelastic</em>. Kung eksaktong 1, <em>unitary</em>.</p>
+
+    <div class="lesson-images">
+        <img src="lesson3-1.jfif" alt="inelastic" class="lesson-pic">
+        <img src="lesson3-2.jfif" alt="elasticity" class="lesson-pic">
+    </div>
+
+    <p style="text-align: center; margin-top: 1rem;"><a href="#demand-factors" class="btn">Back to top</a></p>
+</section>
+
+<section class="lesson" id="lesson-4">
+    <h2>LESSON 4 – Market Equilibrium</h2>
+    <p style="text-align: justify;">Isang kalagayan sa pamilihan na ang dami ng handa at kayang bilhing produkto o serbisyo ng mga konsyumer at ang handa at kayang ipagbiling produkto at serbisyo ng mga prodyuser ay pareho ayon sa presyong kanilang pinagkasunduan.</p>
+
+    <h3>EKWILIBRIYONG PRESYO</h3>
+    <p style="text-align: justify;">Pinagkasunduang presyo ng konsyumer at prodyuser.</p>
+
+    <h3>EKWILIBRIYONG DAMI</h3>
+    <p style="text-align: justify;">Napagkasunduang dami ng mga produkto o serbisyo.</p>
+
+    <h3>DISEKWILIBRIYO</h3>
+    <p style="text-align: justify;">Anumang sitwasyon o kalagayan na hindi pareho ang quantity demanded at quantity supplied sa isang takdang presyo.</p>
+
+    <h4>SHORTAGE</h4>
+    <p style="text-align: justify;">Ang dami ng demand ay mas malaki sa dami ng supply.</p>
+
+    <h4>SURPLUS</h4>
+    <p style="text-align: justify;">Mas marami ang quantity supplied kaysa sa quantity demanded.</p>
+
+    <div class="lesson-images">
+        <img src="lesson4-1.png" alt="equilibrium graph" class="lesson-pic">
+        <img src="lesson4-2.jfif" alt="shift example" class="lesson-pic">
+    </div>
+</section>
+
+
+<section class="lesson" id="lesson-5">
+    <h2>LESSON 5 – Iba’t-ibang Estraktura ng Pamilihan</h2>
+
+    <p style="text-align: justify;">Ang nagsisilbing lugar kung saan nakakamit ng isang konsyumer ang sagot sa marami niyang pangangailangan at kagustuhan sa pamamagitan ng mga produkto at serbisyong handa at kaya niyang ikonsumo.</p>
+
+    <h3>PAMILIHAN</h3>
+    <p style="text-align: justify;"><strong>3 ELEMENTO NG ISANG PAMILIHAN</strong></p>
+    <ul style="text-align: justify; margin-left: 1.2em;">
+        <li>Mamimili</li>
+        <li>Prodyuser/negosyante</li>
+        <li>Produkto</li>
+    </ul>
+
+    <h3>PAGKAKAIBA NG MGA ANYO / URI NG PAMILIHAN</h3>
+    <ul style="text-align: justify; margin-left: 1.2em;">
+        <li>Bilang at laki ng prodyuser o konsyumer</li>
+        <li>Uri ng produkto o serbisyo</li>
+        <li>Kontrol sa pagpasok sa pamilihan</li>
+        <li>Kontrol sa presyo</li>
+        <li>Paggamit ng di-presyong kompetisyon</li>
+    </ul>
+
+    <h3>URI NG PAMILIHAN</h3>
+    <p style="text-align: justify;">Lokal / Panrehiyon / Pambansa / Pandaigdigan</p>
+
+    <section class="pamilihan-ganap">
+        <h3>GANAP NA KOMPETISYON</h3>
+        <ol style="text-align: justify; margin-left: 1.2em;">
+            <li>Maraming konsyumer at prodyuser sa industriya</li>
+            <li>Ang mga produkto ng mga kalakalan sa industriya ay magkakatulad</li>
+            <li>Ang mga kalakalan sa industriya ay tinatawag na price takers</li>
+            <li>Malayang nakapapasok at nakalalabas ang mga kalakalan sa produksyon</li>
+            <li>Walang kontrol sa presyo</li>
+        </ol>
+        <p style="text-align: justify;"><strong>Ginagamit sa ganitong pamilihan:</strong> Isang estruktura ng pampamilihan na kung saan ang indibidwal na kalakalan ay walang malakas na kontrol sa presyo (price taker).</p>
+    </section>
+
+    <section class="pamilihan-d-ganap">
+        <h3>DI-GANAP NA KOMPETISYON</h3>
+        <p style="text-align: justify;">Sa di-ganap na kompetisyon makikita ang iba't ibang anyo ng pamilihan kung saan may kontrol o impluwensiya ang ilan sa presyo o produkto.</p>
+
+        <h4>MONOPOLYO</h4>
+        <ul style="text-align: justify; margin-left: 1.2em;">
+            <li>Iisa ang prodyuser</li>
+            <li>Ang produkto ay walang malapit na kapalit</li>
+            <li>Ang monopolista — price maker ng produkto</li>
+            <li>Napakahirap ang pagpasok ng mga bagong prodyuser sa ganitong pamilihan</li>
+            <li>Ang pag-aanunsyo sa produkto ay maaaring gamitin o hindi</li>
+        </ul>
+
+        <h4>OLIGOPOLY</h4>
+        <p style="text-align: justify;">Kakaunti lamang ang mga prodyuser sa industriya. Ang mga produkto ay maaaring magkakatulad o magkakaiba. Malaki ang kontrol ng mga kalakalan pagdating sa presyo. Mahirap ang papasok ng mga bagong prodyuser. Gumagastos ng malaki ang mga kalakalan sa pag-aanunsyo, pananaliksik, at pag-unlad.</p>
+
+        <h4>MONOPOLISTIC COMPETITION</h4>
+        <p style="text-align: justify;">May katamtamang dami ng mga prodyuser at konsyumer. Ang mga industriya ay agresibong nakikipagkompetensya sa isa’t isa. Mayroong malawakang pag-aanunsyo. May kaunting control sa presyo dahil sa pagkakaiba-iba ng produkto. Madali ang pagpasok ng mga bagong prodyuser kung ikukumpara sa monopoly at oligopoly.</p>
+
+        <h4>MONOPSONY</h4>
+        <p style="text-align: justify;">Mayroon lamang iisang konsyumer ngunit maraming prodyuser ng produkto at serbisyo. May kapangyarihan ang konsyumer na maimpluwensiyahan ang presyo sa pamilihan.</p>
+    </section>
+
+    <div class="lesson-images">
+        <img src="lesson5-1.jfif" alt="market structure 1" class="lesson-pic">
+        <img src="lesson5-2.jpg" alt="market structure 2" class="lesson-pic">
+    </div>
+</section>
+
+
+<section class="lesson" id="lesson-6">
+    <h2>LESSON 6 – Bahaging Ginagampanan ng Pamahalaan</h2>
+    <p style="text-align: justify;">Ito ay isang mahalagang institusyon sa ating bansa, alinsunod sa itinadhana ng Artikulo II Seksyon 4 ng 1987 konstitusyon ng Pilipinas. Pangunahing tungkulin ng pamahalaan na paglingkuran at pangalagaan ang sambayanan.</p>
+
+    <h3>ANG PAGKONTROL SA PRESYO NG PAMAHALAAN</h3>
+    <p style="text-align: justify;"><strong>PRICE CONTROL</strong> — Pagtatadhana ng pamahalaan ng pinakamababa at pinakamataas na presyong maaaring itakda sa mga produkto at serbisyo.</p>
+
+    <h3>REPUBLIC ACT 7581</h3>
+    <p style="text-align: justify;">Price Control Act — Layunin na maisagawa ng pamahalaan ang pagkontrol sa presyo ng mga bilihin.</p>
+
+    <h3>NATIONAL PRICE COORDINATION COUNCIL</h3>
+    <p style="text-align: justify;">May layunin na mabantayan ang presyo ng mga produkto pagkatapos magpalabas ng price ceiling ang mga pamahalaan.</p>
+
+    <h3>PRICE CEILING</h3>
+    <p style="text-align: justify;">Ang pinakamataas na presyong tinakda ng pamahalaan upang ipagbili ang mga produkto. Isinasagawa upang tulungan at bigyang proteksyon ang mga mamimili laban sa mga abusado at mapagsamantalang negosyante. Karaniwang itinatakda nang mas mababa sa equilibrium price.</p>
+
+    <h3>PRICE SUPPORT</h3>
+    <p style="text-align: justify;">Isinasagawa ng pamahalaan upang tulungan at bigyang proteksyon ang mga prodyuser upang mabayaran ang mga gastos ng produksyon.</p>
+
+    <h3>FLOOR PRICE</h3>
+    <p style="text-align: justify;">Pinakamababa na presyong tinakda ng pamahalaan upang ipagbili ang mga produkto. Itinatakda ito na mas mataas sa equilibrium price.</p>
+
+    <div class="lesson-images">
+        <img src="lesson6-1.png" alt="government role" class="lesson-pic">
+        <img src="lesson6-2.png" alt="policy example" class="lesson-pic">
+    </div>
+</section>
+
+<section class="lesson reflection" id="reflection">
+    <h2>REPLEKSYON</h2>
+
+    <p style="text-align: justify;">Sa araling Ekonomiks, natutunan ko kay Sir Calimbas kung paano gumagana ang demand, supply, at presyo sa ating ekonomiya. Naunawaan ko rin kung paano nababalanse ang pamilihan at kung gaano kahalaga ang papel ng pamahalaan sa pagpapanatili ng maayos na takbo ng ekonomiya.</p>
+
+    <p style="text-align: justify;">Aminado akong hindi ako nakapag-aral nang maayos sa kwartong ito at baka bumagsak ako, pero gusto ko pa ring matuto at magbago. Ang mga tinuro ni Sir Calimbas ay nagbigay sa akin ng inspirasyon na mas pagbutihin pa sa susunod, dahil alam kong makatutulong ito sa pang-araw-araw na buhay.</p>
+
+    <p style="text-align: center; margin-top: 1rem;"><a href="#demand-factors" class="btn">Back to top</a></p>
+</section>
+
+</body>
+</html>
+

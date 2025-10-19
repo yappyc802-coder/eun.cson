@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+ <head><title>My Personal Space </title>
+<style type="text/css">
+
+    body {
+        font-family: Arial, sans-serif;
+        background-image: url('ABOUTME.jpg');
+        background-attachment: fixed;
+    }
+
+    h1 {
+       margin-left: 280px;
+       font-weight: bold;
+       font-size: 50px;
+       margin-bottom: 3px;
+       color: white;
+       margin-top: -270px;
+   }
+
+    h2.design {
+       font-weight: bold;
+       font-size: 50px;
+       text-align:center;
+       color: white;
+       margin-top: -50px; 
+       
+    }
+
+   header {
+      background: linear-gradient(120deg, #abc394 0%, #e9f7d3 100%);
+      padding: 2rem 0;
+      margin-bottom: -1000px;
+   }
+
+    a {
+      color:white;
+      text-decoration:none;
+      font-weight:bold;
+      margin-left: 50%;
+      font-size: large;
+   }
+
+   a:hover {
+      color:#ffbfe6;
+      text-decoration: underline;
+
+   }
+   section {
+      max-width: 1000px;
+      margin: 2rem auto;
+      background-color:#f0eb9e;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  p {
+    background-color: white;
+    border: #abc394 dashed 5px;
+  }
+
+  img:hover.zoom {
+    transition: (1.05s);
+    transform: scale(1.5);
+  }
+
+  video:hover {
+    transition: (1.05s);
+    transform: scale(1.3);
+  }
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    color: white;
+    background-color: #abc394;
+}
+
+.logo{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px
+}
+
+.nav-links a{
+    color: white;
+    text-decoration:none;
+    font-size: 1em;
+    transition: color 0.6 ease;
+}
+
+.nav-item{
+    padding: 12px
+}
+
+.nav-item:hover{
+    background-color: rgba(255, 255, 255, 0.253);
+    border-radius: 8px;
+    transition: color 1s ease, background-color 1s ease
+}
+</style>
+</head>
+<body>
+      <nav class="navbar">
+        <div class="logo">Araling Panlipunan</div>
+          <ul class="nav-links">
+             <li><a class="nav-item" href="eportfolio.html">Home</a></li>
+             <li><a class="nav-item" href="ict.html">ICT</a></li>
+             <li><a class="nav-item" href="ap.html"> AP </a></li>
+          </ul>
+      </nav>
+
+      <section >
+              <div style="margin-top: 50px; font-size:20px;">
+                <img class="zoom" src="me1.jfif" alt="MEE!!" style="display: block; margin-left: 10px; width: 200px; height: 200px; border-radius: 50%; border: 6px solid white;">
+                <h1> My Personal Space  </h1>
+                   <ul style="text-align: justify; margin-left:250px;background-color: #d4e3bc; font-size: 18px; line-height: 1.3; color: black; border: white solid 5px;
+                      border-radius: 10px; padding: 25px; font-family:Comic Sans MS;">
+                      <li> Hii!! I'm Eunice Beatriz E. Tecson, you can call me <strong>eunice</strong> or <strong>nishie</strong>! </li>
+                      <li> I was born on May 25, 2011, so I'm currently 14 and I <strong> LOOOOVVEE </strong> MUSIC!!! </li>
+                      <li> You can count on me when it comes to singing, playing instruments or making a new song. &#128540;</li>
+                      <li>I'm not really good at sports but I enjoy playing badminton with my 
+                           cousin, especially if theres food after!!</li>
+              </ul>
+              </div>
+      </section>
+
+      <section>
+              <div style="margin-top: 50px; font-size:20px;">
+                <h2 class="design"> My B.F.F's !! </h1>
+                <img class="zoom" src="BFF.jfif" alt="FRIENDS!!" style="display: block; margin-left: 30px; width: 200px; height: 200px; border-radius: 10%; border: 6px solid #f0eb9e; margin-top: -5x;">
+                <img class="zoom" src="BFF1.jfif" alt="FRIENDS!!" style="display: block; margin-left: 270px; width: 200px; height: 200px; border-radius: 10%; border: 6px solid #f0eb9e; margin-top: -212px;">
+                <img class="zoom" src="BFFS5.jfif" alt="FRIENDS!!" style="display: block; margin-left: 515px; width: 200px; height: 200px; border-radius: 10%; border: 6px solid #f0eb9e; margin-top: -212px;">
+                <img class="zoom" src="BFF2.jfif" alt="FRIENDS!!" style="display: block; margin-left: 750px; width: 200px; height: 200px; border-radius: 10%; border: 6px solid #f0eb9e; margin-top: -212px;">
+                <p style="text-align: justify; font-size: 18px; line-height: 1.3; color: black;  padding: 25px; font-family:Comic Sans MS; margin-top: 10px;">
+                      These are my bestfriends!! They mean a lot to me. They treat me with care and respect even when we fight. 
+                      We've made countless memories in a short amount of time, from the happiest moments to the toughest days.
+                      Our inside jokes that never fail to make me laugh, even when only us could understand. 
+                      Just from that, I just know that they're the ones I want to be with till my hair turns grey.
+                  <br><br>
+                      For me, friendship is built on trust and believing that there’s good in everyone. I choose to see people for who they can be, not just for their mistakes,
+                      That’s why I trust my friends a lot, not because they’re perfect or whatsoever, but because I believe theres a spark of light in them.
+              </p>
+         </div>
+      </section>
+
+      <section>
+          <div style="margin-top: 50px; font-size:20px;">
+            <h2 class="design"> FAMILYY !! </h2>
+            <img class="zoom" src="BFF3.jfif" alt="trioo!!" style="display: block; margin-left: 30px; width: 200px; height: 200px; border-radius: 10%; border: 6px solid #f0eb9e; margin-top: -5px;">
+            <img class="zoom" src="family1.jfif" alt="familyy!!" style="display: block; margin-left: 270px; width: 200px; height: 200px; border-radius: 10%; border: 6px solid #f0eb9e; margin-top: -212px;">
+            <img class="zoom" src="family2.jfif" alt="kakulitan!!" style="display: block; margin-left: 515px; width: 200px; height: 200px; border-radius: 10%; border: 6px solid #f0eb9e; margin-top: -212px;">
+            <img class="zoom" src="broski.jfif" alt="kuya!!" style="display: block; margin-left: 750px; width: 200px; height: 200px; border-radius: 10%; border: 6px solid #f0eb9e; margin-top: -212px;">
+            <p style="text-align: justify; font-size: 18px; line-height: 1.3; color: black;  padding: 25px; font-family:Comic Sans MS; margin-top: 10px;">
+                  My family means everything to me. They are my support system, my source of strength, and my biggest cheerleaders. 
+                  Although we might argue sometimes, we end the day with laughter, eat together and make up like nothing happened.
+                  There are way too many memories to count, the funny momments, the embarassing ones, the happy ones and even the hard ones,
+                  I wouldn't trade anything away for it. 
+          </p>
+      </section>
+
+      <img src="icon1.gif" alt="flowers" style="display: block; margin-bottom:50px; margin-left: 100px; width: 350px; height: 200px; border-radius: 10%; border: 6px solid #abc394;">
+      <img src="wipe.gif" alt="flowers" style="display: block;  margin-left: 1060px; width: 350px; height: 200px; border-radius: 10%; border: 6px solid #abc394;">
+
+      <video width="250" height="500" controls style="display: block; margin-left: auto; margin-right: auto; margin-top: -470px; border: 6px solid #abc394; border-radius: 12px; background-color: white;">
+          <source src="forever.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+     <br><br>
+     <header><nav>
+      <a href="eportfolio.html"> Home</a>
+    </nav></header>
+      
+</body>
+</html>

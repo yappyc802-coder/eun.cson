@@ -1,0 +1,237 @@
+body{
+    background-image: url(AP.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+:root{
+    --primary: #6A6625; /* main olive */
+    --secondary: #A38B2E; /* golden accent */
+    --primary-05: rgba(106,102,37,0.08);
+    --primary-10: rgba(106,102,37,0.12);
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    color: white;
+    background-color: var(--primary);
+}
+
+.logo{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+ul.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a{
+    color: white;
+    text-decoration:none;
+    font-size: 1em;
+    transition: color 0.6 ease;
+}
+
+.nav-item{
+    padding: 12px;
+    font-weight: bold;
+}
+
+.nav-item:hover{
+    background-color: white;
+    border-radius: 8px;
+    transition: color 1s ease, background-color 1s ease;
+    color:black;
+}
+
+section{
+    max-width: 800px;
+    margin: 2em auto;
+    background-color:white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    color: #2D3A43;
+    font-weight: bold;
+}
+
+h1{
+    color: var(--primary) ;
+    text-align: center;
+    background-color: white;
+    border-radius: 12px;
+    border: var(--primary) solid 5px;
+    font-size:55px;
+    margin-left: 3em;
+    margin-right: 3em;
+}
+
+h2{
+    color: var(--primary);
+}
+
+
+.supply-section{
+    max-width: 800px;
+    margin: 2em auto;
+    background: rgba(255,255,255,0.95);
+    padding: 1.25rem;
+    border-radius: 10px;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+    color: #223322;
+}
+
+.supply-section .tabs{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+    align-items: start;
+}
+
+.supply-section input[type="radio"]{ display: none; }
+
+.supply-section .tab{
+    background: var(--primary-05);
+    padding: 0.6rem 0.8rem;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    border: 2px solid transparent;
+}
+
+.supply-section .tab:hover{ background: var(--primary-10); }
+
+.supply-section .panels{
+    grid-column: 1 / -1;
+    margin-top: 1rem;
+    min-height: 80px;
+}
+
+.supply-section .panel{
+    display: none;
+    padding: 0.75rem;
+    border-radius: 8px;
+    background: #ffffff;
+    border: 1px solid #e6efe6;
+}
+
+
+#tab-def:checked ~ label[for="tab-def"],
+#tab-det:checked ~ label[for="tab-det"],
+#tab-curve:checked ~ label[for="tab-curve"]{
+    background: var(--secondary);
+    border-color: var(--primary);
+}
+
+#tab-def:checked ~ .panels #panel-def{ display: block; }
+#tab-det:checked ~ .panels #panel-det{ display: block; }
+#tab-curve:checked ~ .panels #panel-curve{ display: block; }
+
+@media (max-width: 700px){
+    .supply-section .tabs{ grid-template-columns: 1fr; }
+    .flipbook{ margin-left: auto; margin-right: auto; }
+    h1{ font-size: 40px; margin-left: 1em; margin-right: 1em; }
+}
+
+.demand-factors{
+    max-width: 900px;
+    margin: 2em auto;
+    background: rgba(255,255,255,0.98);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.06);
+}
+
+.demand-factors h2{ text-align: center; color: var(--primary); margin-bottom: 0.6rem; }
+.df-nav{ display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center; margin-bottom: 1rem; }
+.df-link{ background: var(--primary-05); padding: 0.45rem 0.8rem; border-radius: 8px; text-decoration: none; color: var(--primary); font-weight: bold; }
+.df-link:hover{ background: var(--primary-10); }
+
+.df-item{ margin: 1rem 0; padding: 0.8rem; border-left: 4px solid var(--secondary); background: #ffffff; border-radius: 6px; }
+.df-item h3{ margin-bottom: 0.4rem; color: var(--primary); }
+
+.demand-factors .btn{ display: inline-block; padding: 8px 14px; background: var(--primary); color: white; border-radius: 8px; text-decoration: none; }
+.demand-factors .btn:hover{ background: var(--secondary); }
+
+@media (max-width:600px){
+    .df-nav{ flex-direction: column; align-items: stretch; }
+    .df-link{ text-align: center; }
+}
+
+/* Lesson sections (3-6) styling */
+.lesson{
+    max-width: 1000px;
+    margin: 2em auto;
+    padding: 1.2rem;
+    background: linear-gradient(180deg, rgba(255,255,255,0.98) 0%, rgba(250,248,240,0.98) 100%);
+    border-radius: 10px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+    border-left: 6px solid #6A6625; /* primary accent */
+}
+
+.lesson h2{ color: #6A6625; margin-bottom: 0.4rem; }
+.lesson p{ color: #333; margin-bottom: 0.8rem; }
+
+.lesson-images{ display: flex; gap: 1rem; justify-content: center; align-items: center; flex-wrap: wrap; }
+.lesson-pic{ width: 320px; max-width: 46%; height: 180px; object-fit: cover; border-radius: 8px; border: 4px solid var(--secondary); box-shadow: 0 4px 10px rgba(0,0,0,0.08); }
+
+@media (max-width:800px){
+    .lesson-pic{ width: 100%; max-width: 100%; height: 180px; }
+    .lesson{ padding: 1rem; }
+}
+
+/* small accent for lesson headings */
+.lesson h2::after{ content: '' ; display: block; width: 60px; height: 6px; background: linear-gradient(90deg,var(--primary),var(--secondary)); margin-top: 8px; border-radius: 4px; }
+
+/* Interactive Lesson 5 styles */
+.interactive-lesson .market-tabs{ display: block; margin-top: 0.8rem; }
+.interactive-lesson input[type="radio"]{ display: none; }
+
+.market-btn{ display: inline-block; padding: 0.6rem 0.9rem; margin: 0.2rem; border-radius: 8px; cursor: pointer; background: var(--primary-05); border: 2px solid transparent; color: var(--primary); font-weight: bold; }
+.market-btn:hover{ background: var(--primary-10); }
+
+.interactive-lesson .market-panels{ margin-top: 1rem; }
+.market-panel{ display: none; padding: 0.8rem; border-radius: 8px; background: #fffdf8; border: 1px dashed rgba(106,102,37,0.15); }
+
+/* Use adjacent label styling instead */
+input#m1:checked + label[for="m1"],
+input#m2:checked + label[for="m2"],
+input#m3:checked + label[for="m3"],
+input#m4:checked + label[for="m4"]{
+    background: linear-gradient(90deg,var(--primary),var(--secondary));
+    color: white;
+    border-color: var(--primary);
+}
+
+/* panels toggling */
+input#m1:checked ~ .market-panels #panel-m1,
+input#m2:checked ~ .market-panels #panel-m2,
+input#m3:checked ~ .market-panels #panel-m3,
+input#m4:checked ~ .market-panels #panel-m4{
+    display: block;
+}
+
+.market-panel h3{ color: var(--primary); margin-bottom: 0.4rem; }
+.market-panel .lesson-pic{ width:280px; height:150px; border: 3px solid var(--secondary); }
+
+@media (max-width:700px){
+    .market-btn{ width: 100%; text-align: center; }
+    .market-panel .lesson-pic{ width: 100%; height: 160px; }
+}
